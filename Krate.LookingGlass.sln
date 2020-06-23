@@ -17,18 +17,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krate.LookingGlass.Test", "Krate.LookingGlass.Test\Krate.LookingGlass.Test.csproj", "{18306148-ECA6-4100-A417-A8592041B6E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krate.LookingGlass.Test", "Krate.LookingGlass.Test\Krate.LookingGlass.Test.csproj", "{18306148-ECA6-4100-A417-A8592041B6E9}"
 	ProjectSection(ProjectDependencies) = postProject
 		{1F8659D0-490A-4722-8CE2-23BFC6DA2792} = {1F8659D0-490A-4722-8CE2-23BFC6DA2792}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krate.LookingGlass.HELib", "Krate.LookingGlass.HELib\Krate.LookingGlass.HELib.csproj", "{4AF04404-A3B3-436D-9D73-4A1D633B3B79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krate.LookingGlass.HELib", "Krate.LookingGlass.HELib\Krate.LookingGlass.HELib.csproj", "{4AF04404-A3B3-436D-9D73-4A1D633B3B79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krate.LookingGlass.HELib.Test", "Krate.LookingGlass.HELib.Test\Krate.LookingGlass.HELib.Test.csproj", "{2FA584C8-5A12-4284-82C8-B4747E1A7B59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Krate.LookingGlass.HELib.Test", "Krate.LookingGlass.HELib.Test\Krate.LookingGlass.HELib.Test.csproj", "{2FA584C8-5A12-4284-82C8-B4747E1A7B59}"
 	ProjectSection(ProjectDependencies) = postProject
 		{4AF04404-A3B3-436D-9D73-4A1D633B3B79} = {4AF04404-A3B3-436D-9D73-4A1D633B3B79}
 		{1F8659D0-490A-4722-8CE2-23BFC6DA2792} = {1F8659D0-490A-4722-8CE2-23BFC6DA2792}
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEALNetExamples", "SEALNetExamples\SEALNetExamples.csproj", "{41B64FA3-0282-4C0C-8603-5DE74798BC43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,6 +54,10 @@ Global
 		{2FA584C8-5A12-4284-82C8-B4747E1A7B59}.Debug|x64.Build.0 = Debug|x64
 		{2FA584C8-5A12-4284-82C8-B4747E1A7B59}.Release|x64.ActiveCfg = Release|x64
 		{2FA584C8-5A12-4284-82C8-B4747E1A7B59}.Release|x64.Build.0 = Release|x64
+		{41B64FA3-0282-4C0C-8603-5DE74798BC43}.Debug|x64.ActiveCfg = Debug|x64
+		{41B64FA3-0282-4C0C-8603-5DE74798BC43}.Debug|x64.Build.0 = Debug|x64
+		{41B64FA3-0282-4C0C-8603-5DE74798BC43}.Release|x64.ActiveCfg = Release|x64
+		{41B64FA3-0282-4C0C-8603-5DE74798BC43}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

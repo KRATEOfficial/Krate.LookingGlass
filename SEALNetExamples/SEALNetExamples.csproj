@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Microsoft Research</Authors>
+    <Company>Microsoft Corporation</Company>
+    <Description>.NET wrapper examples for Microsoft SEAL</Description>
+    <Copyright>Microsoft Corporation 2020</Copyright>
+    <Platforms>x64</Platforms>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)'=='x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>$(ProjectDir)../../bin/dotnet/$(Configuration)</OutputPath>
+  </PropertyGroup>
+  <!--<ItemGroup>
+    <ProjectReference Include="$(ProjectDir)../src/SEALNet.csproj"/>
+  </ItemGroup>
+  <ItemGroup>
+    <SEALCBinaryFiles Condition="$([MSBuild]::IsOsPlatform(Windows))" Include="$(ProjectDir)..\..\lib\x64\$(Configuration)\sealc.dll"/>
+    <SEALCBinaryFiles Condition="$([MSBuild]::IsOsPlatform(Linux))" Include="$(ProjectDir)../../lib/libsealc.so.*"/>
+    <SEALCBinaryFiles Condition="$([MSBuild]::IsOsPlatform(OSX))" Include="$(ProjectDir)../../lib/libsealc*.dylib"/>
+  </ItemGroup>-->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Research.SEALNet" Version="3.5.4" />
+  </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Copy SourceFiles="@(SEALCBinaryFiles)" DestinationFolder="$(TargetDir)" />
+  </Target>
+</Project>
